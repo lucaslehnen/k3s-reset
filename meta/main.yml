@@ -1,0 +1,16 @@
+galaxy_info:
+  role_name: k3s_reset
+  namespace: tchecode
+  author: Lucas Lehnen
+  description: Reset a k3s cluster, removing all files installed
+  company: Tchê Code
+  license: MIT
+  min_ansible_version: 2.1
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - k3s
+
+dependencies: []
