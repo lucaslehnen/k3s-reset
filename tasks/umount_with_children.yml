@@ -7,6 +7,7 @@
   failed_when: false
   changed_when: get_mounted_filesystems.stdout | length > 0
   check_mode: false
+  notify: reboot
 
 - name: Umount filesystem
   mount:
@@ -14,3 +15,4 @@
     state: unmounted
   with_items:
     "{{ get_mounted_filesystems.stdout_lines | reverse | list }}"
+  notify: reboot

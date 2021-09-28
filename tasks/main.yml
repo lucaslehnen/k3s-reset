@@ -27,7 +27,6 @@
     - /var/lib/rancher/k3s
   loop_control:
     loop_var: mounted_fs
-  notify: reboot
 
 - name: Remove service files, binaries and data
   file:
