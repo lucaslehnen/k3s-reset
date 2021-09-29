@@ -16,7 +16,11 @@ In your `main.yml`:
 - hosts: servers
   roles:
       - k3s-reset
+  vars:
+    ansible_user: ubuntu
 ```
+
+`~ubuntu/.kube` will be removed.
 
 In your `requirements.yml`:
 

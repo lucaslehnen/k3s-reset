@@ -1,2 +1,3 @@
 ---
 # defaults file for k3s-reset
+ansible_user: ubuntu

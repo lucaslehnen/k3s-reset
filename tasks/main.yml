@@ -28,6 +28,15 @@
   loop_control:
     loop_var: mounted_fs
 
+- name: Remove .kube configs
+  file:
+    state: absent
+    force: true
+    path: "{{ item }}"
+  with_items:
+    - "~{{ ansible_user }}/.kube"
+    - "/root/.kube"
+
 - name: Remove service files, binaries and data
   file:
     name: "{{ item }}"
