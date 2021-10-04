@@ -1,6 +1,8 @@
 Reset k3s cluster
 =========
 
+DEPRECATED: migrate to https://github.com/lucaslehnen/tchecode.k3s
+
 This role reset changes caused by:
 
   - https://github.com/lucaslehnen/k3s-install
